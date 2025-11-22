@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\I18n\ContextTranslate;
+namespace LunaPress\Wp\I18n\Functions\ContextTranslate;
 
-use LunaPress\Wp\I18nContracts\ContextTranslate\IContextTranslateFactory;
-use LunaPress\Wp\I18nContracts\ContextTranslate\IContextTranslateFunction;
+use LunaPress\Wp\I18nContracts\Function\ContextTranslate\IContextTranslateFactory;
+use LunaPress\Wp\I18nContracts\Function\ContextTranslate\IContextTranslateFunction;
 use Psr\Container\ContainerInterface;
 
 defined('ABSPATH') || exit;

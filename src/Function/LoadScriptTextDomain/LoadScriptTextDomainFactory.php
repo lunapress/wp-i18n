@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\I18n\LoadScriptTextDomain;
+namespace LunaPress\Wp\I18n\Functions\LoadScriptTextDomain;
 
-use LunaPress\Wp\I18nContracts\LoadScriptTextDomain\ILoadScriptTextDomainFactory;
-use LunaPress\Wp\I18nContracts\LoadScriptTextDomain\ILoadScriptTextDomainFunction;
+use LunaPress\Wp\I18nContracts\Function\LoadScriptTextDomain\ILoadScriptTextDomainFactory;
+use LunaPress\Wp\I18nContracts\Function\LoadScriptTextDomain\ILoadScriptTextDomainFunction;
 use Psr\Container\ContainerInterface;
 
 defined('ABSPATH') || exit;

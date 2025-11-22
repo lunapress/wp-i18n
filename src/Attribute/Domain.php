@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\I18n\Support\Attribute;
+namespace LunaPress\Wp\I18n\Attribute;
 
 use Attribute;
-use LunaPress\Wp\I18nContracts\Support\IDomain;
+use LunaPress\Wp\I18nContracts\Capability\IDomain;
 
 defined('ABSPATH') || exit;
 

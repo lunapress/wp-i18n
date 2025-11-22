@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\I18n\ContextPluralTranslate;
+namespace LunaPress\Wp\I18n\Functions\ContextPluralTranslate;
 
-use LunaPress\Wp\I18n\Support\Concerns\HasContext;
-use LunaPress\Wp\I18n\Support\Concerns\HasDomain;
-use LunaPress\Wp\I18n\Support\Concerns\HasPlural;
-use LunaPress\Wp\I18nContracts\ContextPluralTranslate\IContextPluralTranslateFunction;
+use LunaPress\Wp\I18n\Trait\HasContext;
+use LunaPress\Wp\I18n\Trait\HasDomain;
+use LunaPress\Wp\I18n\Trait\HasPlural;
+use LunaPress\Wp\I18nContracts\Function\ContextPluralTranslate\IContextPluralTranslateFunction;
 
 defined('ABSPATH') || exit;
 

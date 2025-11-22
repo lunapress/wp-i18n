@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\I18n\RenderTranslate;
+namespace LunaPress\Wp\I18n\Functions\RenderTranslate;
 
-use LunaPress\Wp\I18nContracts\RenderTranslate\IRenderTranslateFactory;
-use LunaPress\Wp\I18nContracts\RenderTranslate\IRenderTranslateFunction;
+use LunaPress\Wp\I18nContracts\Function\RenderTranslate\IRenderTranslateFactory;
+use LunaPress\Wp\I18nContracts\Function\RenderTranslate\IRenderTranslateFunction;
 use Psr\Container\ContainerInterface;
 
 defined('ABSPATH') || exit;

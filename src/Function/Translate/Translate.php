@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\I18n\Translate;
+namespace LunaPress\Wp\I18n\Functions\Translate;
 
-use LunaPress\Wp\I18n\Support\Concerns\HasDomain;
-use LunaPress\Wp\I18n\Support\Concerns\HasText;
-use LunaPress\Wp\I18nContracts\Translate\ITranslateFunction;
+use LunaPress\Wp\I18n\Trait\HasDomain;
+use LunaPress\Wp\I18n\Trait\HasText;
+use LunaPress\Wp\I18nContracts\Function\Translate\ITranslateFunction;
 
 defined('ABSPATH') || exit;
 

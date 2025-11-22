@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\I18n\ContextTranslate;
+namespace LunaPress\Wp\I18n\Functions\ContextTranslate;
 
-use LunaPress\Wp\I18n\Support\Concerns\HasContext;
-use LunaPress\Wp\I18n\Support\Concerns\HasDomain;
-use LunaPress\Wp\I18n\Support\Concerns\HasText;
-use LunaPress\Wp\I18nContracts\ContextTranslate\IContextTranslateFunction;
+use LunaPress\Wp\I18n\Trait\HasContext;
+use LunaPress\Wp\I18n\Trait\HasDomain;
+use LunaPress\Wp\I18n\Trait\HasText;
+use LunaPress\Wp\I18nContracts\Function\ContextTranslate\IContextTranslateFunction;
 
 defined('ABSPATH') || exit;
 
