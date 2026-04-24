@@ -21,14 +21,14 @@ use LunaPress\Wp\I18n\Function\RenderContextTranslate;
 use LunaPress\Wp\I18n\Function\RenderTranslate;
 use LunaPress\Wp\I18n\Function\Translate;
 use LunaPress\Wp\I18n\Function\TranslateNoopedPlural;
-use LunaPress\Wp\I18nContracts\Capability\IDomain;
+use LunaPress\Wp\I18nContracts\Capability\Domain as DomainContract;
 use LunaPress\Wp\I18nContracts\DTO\NoopedPlural;
 use LunaPress\Wp\I18nContracts\Service\Translator\Translator;
 use ReflectionClass;
 use function count;
 use function sprintf;
 
-readonly class WpTranslator implements Translator
+readonly class DefaultTranslator implements Translator
 {
     private ?string $resolvedDomain;
 
@@ -135,7 +135,7 @@ readonly class WpTranslator implements Translator
             $attrs = $interface->getAttributes(Domain::class);
 
             if (count($attrs) > 0) {
-                /** @var IDomain $attrInstance */
+                /** @var DomainContract $attrInstance */
                 $attrInstance = $attrs[0]->newInstance();
                 return $attrInstance->getDomain();
             }
