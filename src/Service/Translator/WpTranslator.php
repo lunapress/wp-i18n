@@ -22,13 +22,13 @@ use LunaPress\Wp\I18n\Function\RenderTranslate;
 use LunaPress\Wp\I18n\Function\Translate;
 use LunaPress\Wp\I18n\Function\TranslateNoopedPlural;
 use LunaPress\Wp\I18nContracts\Capability\IDomain;
-use LunaPress\Wp\I18nContracts\Entity\INoopedPlural;
-use LunaPress\Wp\I18nContracts\Service\Translator\ITranslator;
+use LunaPress\Wp\I18nContracts\DTO\NoopedPlural;
+use LunaPress\Wp\I18nContracts\Service\Translator\Translator;
 use ReflectionClass;
 use function count;
 use function sprintf;
 
-readonly class Translator implements ITranslator
+readonly class WpTranslator implements Translator
 {
     private ?string $resolvedDomain;
 
@@ -112,17 +112,17 @@ readonly class Translator implements ITranslator
         return ($this->escAttrContextTranslate)($text, $context, $this->getStrictDomain());
     }
 
-    public function noopPlural(string $single, string $plural): INoopedPlural
+    public function noopPlural(string $single, string $plural): NoopedPlural
     {
         return ($this->noopPluralTranslate)($single, $plural, $this->getStrictDomain());
     }
 
-    public function contextNoopPlural(string $single, string $plural, string $context): INoopedPlural
+    public function contextNoopPlural(string $single, string $plural, string $context): NoopedPlural
     {
         return ($this->contextNoopPluralTranslate)($single, $plural, $context, $this->getStrictDomain());
     }
 
-    public function translateNoopedPlural(INoopedPlural $noopedPlural, int $number): string
+    public function translateNoopedPlural(NoopedPlural $noopedPlural, int $number): string
     {
         return ($this->translateNoopedPlural)($noopedPlural, $number);
     }
